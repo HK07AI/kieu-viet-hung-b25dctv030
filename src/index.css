@@ -1,0 +1,142 @@
+/* =========================
+   CÀI ĐẶT CHUNG & MÀU SẮC
+   ========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: min(1050px, 92%);
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background: #ffffff;
+    border-bottom: 4px solid #e31e24;
+    padding: 35px 0;
+}
+
+.school {
+    color: #e31e24;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 5px 0;
+}
+
+.subtitle {
+    color: #687386;
+}
+
+/* NAV */
+nav {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    color: #172033;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 18px;
+}
+
+nav a:hover {
+    color: #e31e24;
+}
+
+/* CARD / SECTION */
+.card {
+    background: #ffffff;
+    border: 1px solid #e1e6ee;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.welcome {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e1e6ee;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    color: #e31e24;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+/* SỞ THÍCH (GRID) */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.hobby-item {
+    text-align: center;
+    background: #f4f7fb;
+    border: 1px solid #e1e6ee;
+    border-radius: 14px;
+    padding: 20px 12px;
+}
+
+.hobby-item span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.hobby-item h3 {
+    margin-bottom: 6px;
+}
+
+.hobby-item p {
+    color: #687386;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background: #ffffff;
+    border-top: 1px solid #e1e6ee;
+    color: #687386;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+    .hobbies-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
